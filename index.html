@@ -7,12 +7,13 @@
   <title>Week 1 - Project</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="togglePwd.js"></script>
+  <script defer src="formValidation.js"></script>
 </head>
 <body>
   <header>
     <h1 id="headerTitle">Complete the form</h1>
   </header>
-  <form>
+  <form autocomplete="off">
     <fieldset>
       <legend>Person Information: </legend>
       <div class="lineContent">
@@ -52,7 +53,7 @@
 
       <div class="lineContent">
         <label for="phone">Phone:</label>
-        <input type="tel" name="phone" id="phone" />
+        <input type="tel" name="phone" id="phone" placeholder="XXXX-XXXX" pattern="[0-9]{4}-[0-9]{4}" />
       </div>
 
       <div class="lineContent">
