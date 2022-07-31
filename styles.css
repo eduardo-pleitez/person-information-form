@@ -11,6 +11,23 @@
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
+  #gifContainer{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(120, 120, 120, 0.5);
+  }
+  #gifElement{
+    width: 300px;
+    height: 300px;
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   header{
     text-align: center;
     margin: 1.5rem;
