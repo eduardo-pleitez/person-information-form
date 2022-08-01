@@ -14,32 +14,29 @@
 </head>
 <body>
   <div id="gifContainer">
-  <img src="images/react-logo.gif" alt="React Gif" id="gifElement" />
+    <img src="images/react-logo.gif" alt="React Gif" id="gifElement" />
   </div>
-  <header>
-    <h1 id="headerTitle">Complete the form</h1>
-  </header>
   <form autocomplete="off">
-    <fieldset>
-      <legend>Person Information: </legend>
+    <header><h1>Complete the form</h1></header>
+    <div id="formContent">
       <div class="lineContent">
-        <label for="pName">Name:</label>
-        <input type="text" name="pName" id="pName" />
+        <label for="pName">Name:*</label>
+        <input type="text" name="pName" id="pName" placeholder="Your name" />
       </div>
 
       <div class="lineContent">
-        <label for="pLastName">Last Name:</label>
-        <input type="text" name="pLastName" id="pLastName" />
+        <label for="pLastName">Last Name:*</label>
+        <input type="text" name="pLastName" id="pLastName" placeholder="Your last name" />
       </div>
 
       <div class="lineContent">
-        <label for="email">Enter your e-mail:</label>
-        <input type="email" name="email" id="email" />
+        <label for="email">Enter your e-mail:*</label>
+        <input type="email" name="email" id="email" placeholder="mail@website.com" />
       </div>
 
       <div class="lineContent">
-        <label for="emailPwd">Enter your e-mail password:</label>
-        <input type="password" name="emailPwd" id="emailPwd" />
+        <label for="emailPwd">Enter your e-mail password:*</label>
+        <input type="password" name="emailPwd" id="emailPwd" placeholder="Min. 8 characters long" />
       </div>
 
       <div class="lineContent">
@@ -48,8 +45,8 @@
       </div>
 
       <div class="lineContent">
-        <label for="emailConf">Repeat your e-mail password:</label>
-        <input type="password" name="emailConfPwd" id="emailConfPwd" />
+        <label for="emailConf">Repeat your e-mail password:*</label>
+        <input type="password" name="emailConfPwd" id="emailConfPwd" placeholder="Repeat your password" />
       </div>
 
       <div class="lineContent">
@@ -58,17 +55,17 @@
       </div>
 
       <div class="lineContent">
-        <label for="phone">Phone:</label>
+        <label for="phone">Phone:*</label>
         <input type="tel" name="phone" id="phone" placeholder="XXXX-XXXX" pattern="[0-9]{4}-[0-9]{4}" />
       </div>
 
       <div class="lineContent">
-        <label for="age">Age:</label>
-        <input type="number" name="age" id="age" />
+        <label for="age">Age:*</label>
+        <input type="number" name="age" id="age" placeholder="18" value="18" min="18" max="120" />
       </div>
 
       <div id="genderSec">
-        <h2>Gender</h2>
+        <h2>Gender*</h2>
         <input type="radio" name="gender" id="male" value="Male" />
         <label for="male">Male</label>
 
@@ -77,7 +74,7 @@
       </div>
 
       <div id="interestsSec">
-        <h2>Interests</h2>
+        <h2>Interests* (Min. 2 interests)</h2>
         <input type="checkbox" name="interestsPerson" id="travel" value="Travel" />
         <label for="travel">Travel</label>
 
@@ -105,21 +102,20 @@
 
       <div class="lineContent">
         <label for="website">Website:</label>
-        <input type="url" name="website" id="website" />
+        <input type="url" name="website" id="website" placeholder="yourwebsite.com" />
       </div>
 
       <div class="lineContent">
         <label for="expLvl">Level of Experience:</label>
         <input type="range" name="expLvl" id="expLvl" />
       </div>
+    </div>
 
-      <div id="errorListContainer">  
-      </div>
-
-      <div class="submitSec">
-        <input type="submit" value="Submit" id="submitBtn" />
-      </div>
-    </fieldset>
+    <div id="errorListContainer">  
+    </div>
+    <div class="submitSec">
+      <input type="submit" value="Submit" id="submitBtn" />
+    </div>
   </form>
 </body>
 </html>
