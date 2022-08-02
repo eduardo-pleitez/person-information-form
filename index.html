@@ -21,21 +21,29 @@
     <div id="formContent">
       <div class="lineContent">
         <label for="pName" class="leftSide">Name:*</label>
-        <input type="text" name="pName" id="pName" placeholder="Your name" />
+        <div class="rightSide">
+          <input type="text" name="pName" id="pName" placeholder="Your name" />
+        </div>
       </div>
 
       <div class="lineContent">
         <label for="pLastName" class="leftSide">Last Name:*</label>
-        <input type="text" name="pLastName" id="pLastName" placeholder="Your last name" />
+        <div class="rightSide">
+          <input type="text" name="pLastName" id="pLastName" placeholder="Your last name" />
+        </div>
       </div>
       <div class="lineContent">
         <label for="email" class="leftSide">Enter your e-mail:*</label>
-        <input type="email" name="email" id="email" placeholder="mail@website.com" />
+        <div class="rightSide">
+          <input type="email" name="email" id="email" placeholder="mail@website.com" />
+        </div>
       </div>
 
       <div class="lineContent">
         <label for="emailPwd" class="leftSide">Enter your e-mail password:*</label>
-        <input type="password" name="emailPwd" id="emailPwd" placeholder="Min. 8 characters long" />
+        <div class="rightSide">
+          <input type="password" name="emailPwd" id="emailPwd" placeholder="Min. 8 characters long" />
+        </div>
       </div>
 
       <div class="lineContent" id="showPassLine">
@@ -45,7 +53,9 @@
 
       <div class="lineContent">
         <label for="emailConf" class="leftSide">Repeat your e-mail password:*</label>
-        <input type="password" name="emailConfPwd" id="emailConfPwd" placeholder="Repeat your password" />
+        <div class="rightSide">
+          <input type="password" name="emailConfPwd" id="emailConfPwd" placeholder="Repeat your password" />
+        </div>
       </div>
 
       <div class="lineContent" id="showPassLine">
@@ -71,13 +81,15 @@
 
       <div class="lineContent">
           <label for="phone" class="leftSide">Phone:*</label>
-          <input type="tel" name="phone" id="phone" placeholder="XXXX-XXXX" pattern="[0-9]{4}-[0-9]{4}
-        " />
+          <div class="rightSide">
+            <input type="tel" name="phone" id="phone" placeholder="XXXX-XXXX" pattern="[0-9]{4}-[0-9]{4}
+            " />
+          </div>
       </div>
 
       <div class="lineContent">
         <label for="interestsPerson" class="leftSide">Interests:* (Min. 2 interests)</label>
-        <div class="rightSide">
+        <div class="rightSide" id="mobileWidth">
           <input type="checkbox" name="interestsPerson" id="travel" value="Travel" />
           <label for="travel">Travel</label>
         
@@ -106,12 +118,16 @@
 
       <div class="lineContent">
         <label for="website" class="leftSide">Website:*</label>
-        <input type="url" name="website" id="website" placeholder="yourwebsite.com" />
+        <div class="rightSide">
+          <input type="url" name="website" id="website" placeholder="yourwebsite.com" />
+        </div>
       </div>
 
-      <div class="lineContent" id="range">
+      <div class="lineContent">
         <label for="expLvl" class="leftSide">Level of Experience:*</label>
-        <input type="range" name="expLvl" id="expLvl" />
+        <div class="rightSide">
+          <input type="range" name="expLvl" id="expLvl" />
+        </div>
       </div>
 
       <div id="errorListContainer">  

@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 /* Mobile design */
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1199px){
   body{
     background-color: #d4d5f7;
     color: #0a071b;
@@ -27,8 +27,9 @@
     background-color: rgba(120, 120, 120, 0.5);
   }
   #gifElement{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    position: -webkit-sticky;
     position: sticky;
     top: 50%;
     left: 50%;
@@ -45,9 +46,6 @@
     padding: 1rem 0;
     color: #0a071b;
     font-size: 0.8rem;
-  }
-  #formContent{
-    text-align: center;
   }
   .lineContent{
     margin: 0.5rem 0;
@@ -66,7 +64,7 @@
   }
   input[type=text], input[type=email], input[type=url], input[type=password]{
     display: inline-block;
-    min-width: 175px;
+    width: 100%;
     padding: 0.8rem 1.5rem;
     font-size: 0.7rem;
     border: 2px solid #e1dfec;
@@ -88,33 +86,23 @@
     border: 2px solid #e1dfec;
     border-radius: 25px;
   }
-  #genderSec, #interestsSec{
-    margin-bottom: 1rem;
-  }
-  #genderSec h2, #interestsSec h2{
-    font-weight: normal;
-    font-size: 1.2rem;
-    margin: 0.8rem;
-  }
-  #genderSec label, #interestsSec label{
-    width: auto;
-    padding-right: 0.5rem;
-    font-size: 0.9rem;
+  #mobileWidth{
+    max-width: 310px;
+    margin: 0 auto;
   }
   input[type=range]{
-    width: 175px;
-  }
-  #range{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1.5rem;
+    width: 100%;
   }
   #errorListContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
+    color: red;
   }
-  #errorListContainer h2{
-    font-size: 1rem;
+  #errorListContainer h2, #errorListContainer ul{
+    width: 275px;
   }
   #errorListContainer ul{
     margin: 1rem;
@@ -142,7 +130,7 @@
 }
 
 /* Desktop and Tablet design*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   body{
     background-color: #d4d5f7;
     color: #0a071b;
@@ -182,6 +170,7 @@
   }
   #formContent{
     margin-left: 5rem;
+    margin-right: 2rem;
   }
   .lineContent{
     margin: 1rem 0;
