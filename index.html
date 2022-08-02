@@ -20,63 +20,64 @@
     <header><h1>Complete the form</h1></header>
     <div id="formContent">
       <div class="lineContent">
-        <label for="pName">Name:*</label>
+        <label for="pName" class="leftSide">Name:*</label>
         <input type="text" name="pName" id="pName" placeholder="Your name" />
       </div>
 
       <div class="lineContent">
-        <label for="pLastName">Last Name:*</label>
+        <label for="pLastName" class="leftSide">Last Name:*</label>
         <input type="text" name="pLastName" id="pLastName" placeholder="Your last name" />
       </div>
-
       <div class="lineContent">
-        <label for="email">Enter your e-mail:*</label>
+        <label for="email" class="leftSide">Enter your e-mail:*</label>
         <input type="email" name="email" id="email" placeholder="mail@website.com" />
       </div>
 
       <div class="lineContent">
-        <label for="emailPwd">Enter your e-mail password:*</label>
+        <label for="emailPwd" class="leftSide">Enter your e-mail password:*</label>
         <input type="password" name="emailPwd" id="emailPwd" placeholder="Min. 8 characters long" />
       </div>
 
-      <div class="lineContent">
+      <div class="lineContent" id="showPassLine">
         <input type="checkbox" name="showEmailPwd" id="showEmailPwd" autocomplete="off" />
         <label for="showEmailPwd">Show Password</label>
       </div>
 
       <div class="lineContent">
-        <label for="emailConf">Repeat your e-mail password:*</label>
+        <label for="emailConf" class="leftSide">Repeat your e-mail password:*</label>
         <input type="password" name="emailConfPwd" id="emailConfPwd" placeholder="Repeat your password" />
       </div>
 
-      <div class="lineContent">
+      <div class="lineContent" id="showPassLine">
         <input type="checkbox" name="showConfPwd" id="showConfPwd" autocomplete="off" />
         <label for="showConfPwd">Show Password</label>
       </div>
 
       <div class="lineContent">
-        <label for="phone">Phone:*</label>
-        <input type="tel" name="phone" id="phone" placeholder="XXXX-XXXX" pattern="[0-9]{4}-[0-9]{4}" />
+        <label for="gender" class="leftSide">Gender:*</label>
+        <div class="rightSide">
+          <input type="radio" name="gender" id="male" value="Male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="Female" />
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="lineContent">
+        <label for="age" class="leftSide">Age:*</label>
+        <div class="rightSide">
+          <input type="number" name="age" id="age" placeholder="18" value="18" min="18" max="120" />
+        </div>
       </div>
 
       <div class="lineContent">
-        <label for="age">Age:*</label>
-        <input type="number" name="age" id="age" placeholder="18" value="18" min="18" max="120" />
+          <label for="phone" class="leftSide">Phone:*</label>
+          <input type="tel" name="phone" id="phone" placeholder="XXXX-XXXX" pattern="[0-9]{4}-[0-9]{4}
+        " />
       </div>
 
-      <div id="genderSec">
-        <h2>Gender*</h2>
-        <input type="radio" name="gender" id="male" value="Male" />
-        <label for="male">Male</label>
-
-        <input type="radio" name="gender" id="female" value="Female" />
-        <label for="female">Female</label>
-      </div>
-
-      <div id="interestsSec">
-        <h2>Interests* (Min. 2 interests)</h2>
-
-        <div class="lineContent">
+      <div class="lineContent">
+        <label for="interestsPerson" class="leftSide">Interests:* (Min. 2 interests)</label>
+        <div class="rightSide">
           <input type="checkbox" name="interestsPerson" id="travel" value="Travel" />
           <label for="travel">Travel</label>
         
@@ -88,8 +89,7 @@
 
           <input type="checkbox" name="interestsPerson" id="cooking" value="Cooking" />
           <label for="cooking">Cooking</label>
-        </div>
-        <div class="lineContent">
+
           <input type="checkbox" name="interestsPerson" id="arts" value="Arts" />
           <label for="arts">Arts</label>
 
@@ -105,18 +105,19 @@
       </div>
 
       <div class="lineContent">
-        <label for="website">Website:*</label>
+        <label for="website" class="leftSide">Website:*</label>
         <input type="url" name="website" id="website" placeholder="yourwebsite.com" />
       </div>
 
-      <div class="lineContent">
-        <label for="expLvl">Level of Experience:*</label>
+      <div class="lineContent" id="range">
+        <label for="expLvl" class="leftSide">Level of Experience:*</label>
         <input type="range" name="expLvl" id="expLvl" />
+      </div>
+
+      <div id="errorListContainer">  
       </div>
     </div>
 
-    <div id="errorListContainer">  
-    </div>
     <div class="submitSec">
       <input type="submit" value="Submit" id="submitBtn" />
     </div>

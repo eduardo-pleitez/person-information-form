@@ -55,9 +55,9 @@
   }
   label{
     display: inline-block;
-    width: 200px;
     font-size: 1rem;
     margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
   }
   input[type=checkbox]{
     width: 15px;
@@ -66,11 +66,12 @@
   }
   input[type=text], input[type=email], input[type=url], input[type=password]{
     display: inline-block;
-    min-width: 225px;
+    min-width: 175px;
     padding: 0.8rem 1.5rem;
     font-size: 0.7rem;
     border: 2px solid #e1dfec;
     border-radius: 25px;
+    margin-right: 0.5rem;
   }
   input[type=tel]{
     width: 150px;
@@ -101,7 +102,13 @@
     font-size: 0.9rem;
   }
   input[type=range]{
-    width: 225px;
+    width: 175px;
+  }
+  #range{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
   }
   #errorListContainer{
     margin: 1rem;
@@ -163,10 +170,10 @@
     transform: translate(-50%, -50%);
   }
   form{
-    max-width: 60%;
+    max-width: 55%;
     margin: 4rem auto;
     background-color: white;
-    padding: 2rem 3rem;
+    padding: 2rem 1rem;
   }
   header{
     text-align: center;
@@ -174,17 +181,22 @@
     color: #0a071b;
   }
   #formContent{
-    text-align: center;
+    margin-left: 5rem;
   }
   .lineContent{
-    padding: 0.5rem 0rem;
-    margin: 0.5rem 0;
-    text-align: center;
+    margin: 1rem 0;
+  }
+  .leftSide{
+    width: 150px;
+  }
+  #showPassLine{
+    margin-left: 11rem;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   label{
     display: inline-block;
-    width: 200px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-right: 0.5rem;
   }
   input[type=checkbox]{
@@ -194,45 +206,38 @@
   }
   input[type=text], input[type=email], input[type=url], input[type=password]{
     display: inline-block;
-    width: 300px;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border: 2px solid #e1dfec;
-    border-radius: 25px;
-  }
-  input[type=tel]{
-    width: 150px;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    width: 250px;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
     border: 2px solid #e1dfec;
     border-radius: 25px;
   }
   input[type=number]{
     width: 100px;
     padding: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     text-align: center;
     border: 2px solid #e1dfec;
     border-radius: 25px;
   }
-  #genderSec, #interestsSec{
-    margin-bottom: 2rem;
+  input[type=tel]{
+    width: 150px;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    border: 2px solid #e1dfec;
+    border-radius: 25px;
+    margin-right: 0.5rem;
   }
-  #genderSec h2, #interestsSec h2{
-    font-weight: normal;
-    font-size: 1.5rem;
-    margin: 0.8rem;
-  }
-  #genderSec label, #interestsSec label{
-    width: auto;
+  .rightSide{
+    display: inline-block;
+    width: 310px;
   }
   input[type=range]{
-    width: 300px;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    width: 250px;
   }
   #errorListContainer{
-    margin: 2rem;
+    margin: 1rem 0;
+    color: red;
   }
   #errorListContainer ul{
     margin: 1rem;
@@ -245,12 +250,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
   }
   .submitSec #submitBtn{
-    font-size: 1.5rem;
-    padding: 1rem 10rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    padding: 0.8rem 6rem;
+    margin-bottom: 1rem;
     background-color: #5138ee;
     color: white;
     outline: none;
